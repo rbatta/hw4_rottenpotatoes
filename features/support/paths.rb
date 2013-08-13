@@ -26,7 +26,7 @@ module NavigationHelpers
 
     when /^the Similar Movies page for "(.*)"$/
       movie = Movie.find_by_title($1)
-      movies_similar_path movie
+      similar_path movie
 
 
     # Add more mappings here.

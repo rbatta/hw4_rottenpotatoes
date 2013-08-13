@@ -65,6 +65,5 @@ class MoviesController < ApplicationController
   end
 
   def similar
-    #@movie = Movie.all
   end
 end
