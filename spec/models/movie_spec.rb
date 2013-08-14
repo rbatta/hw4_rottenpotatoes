@@ -9,7 +9,7 @@ describe Movie do
 
 	describe 'find by director method' do 
 		it 'should return something' do
-			Movie.find_by_director(1).should eql(1)
+			Movie.find_by_director(1).should eql(Movie.find(1))
 		end
 
 		it 'should return list of movies by similar directors'

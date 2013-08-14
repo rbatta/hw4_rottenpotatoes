@@ -43,6 +43,8 @@ describe MoviesController do
 		  	assigns(:movies).should == fake_results  # the important line
 	  	end
 
+	  	it 'should show THX-1138'
+
 	  end # end context
 
 	  context "for movies that don't have a director" do
