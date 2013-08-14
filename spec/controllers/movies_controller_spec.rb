@@ -6,10 +6,14 @@ describe MoviesController do
   	context 'for movies that have a director' do 
 	  	
 	  	before :each do
+	  		#m = mock('movie1', :title => 'Alien', :director => 'Ridley Scott')
 	  		#@fake_movie = mock('Movie')
 	  		#@fake_movie.stub(:title).and_return('Alien')
 	  		#@fake_movie.stub(:director).and_return('Ridley Scott')
-	  		@fake_movie = FactoryGirl.create(:movie)
+	  		#m = mock('movie2')
+	  		#m.stub(:director).and_return('Ridley Scott')
+	  		# this is to check for any code with m.director
+	  		fake_movie = FactoryGirl.create(:movie)
 	  	end #end before
 	  	
 	  	it 'should call the model method in controller action' do
@@ -31,11 +35,12 @@ describe MoviesController do
 	  		response.should render_template("similar") # this bit is what this spec is testing
 	  	end
 
-	  	it 'should grab the id of the current movie'
-
 	  	it 'should render a view to display matched movies' do
+	  		#this checks that the view has an instance variable assigned by controller action
+	  		fake_results = [mock('Movie'), mock('Movie')]
+	  		Movie.stub(:find_by_director).and_return(fake_results)
 		  	get :similar, {:id => '1'}
-		  	response.should render_template("similar")
+		  	assigns(:movies).should == fake_results  # the important line
 	  	end
 
 	  end # end context
