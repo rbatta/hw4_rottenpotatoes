@@ -59,15 +59,13 @@ describe MoviesController do
   		response.should render_template('index')
   	end
 
-  	it 'should sort by title' do
-  		get :index, {sort: 'title'}
-  		response.should redirect_to('index')
-  	end
-
   	it 'should show selected ratings' do
+  		get :index, {rating: 'G', rating: 'PG'}
+  		response.should render_template('index')
   	end
 
   	it 'should show ratings and be sorted' do
+  		get :index, {rating: 'PG', sort: 'release_date'}
   	end
   end
 
