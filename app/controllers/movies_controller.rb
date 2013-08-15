@@ -65,11 +65,13 @@ class MoviesController < ApplicationController
   end
 
   def similar
-    if Movie.find(params[:id]).director == nil
-      redirect_to movies_path
+    if Movie.find(params[:id]).director == "" || Movie.find(params[:id]).director == nil
+      flash[:notice] = "'#{Movie.find(params[:id]).title}' has no director info"
+      redirect_to movies_path # escapes out of method
     else
       @movies = Movie.find_by_director(params[:id])
     end
     #@movies = Movie.find_all_by_director(Movie.find params[:id])
   end
+
 end
