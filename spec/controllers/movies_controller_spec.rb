@@ -43,6 +43,15 @@ describe MoviesController do
 		  	get :similar, {:id => '1'}
 		  	assigns(:movies).should == fake_results  # the important line
 	  	end
+
+	  	it 'should display flash notice and redirect appropriately' do
+	  		m = FactoryGirl.create(:movie, :director => "")
+	  		Movie.should_receive(:find).with('1').and_return(m)
+	  		get :similar, {:id => 1}
+	  		flash[:notice].should_not be_nil
+	  		response.should redirect_to(movies_path)
+	  	end
+
 	  end #end context
   end #end find movies
 
@@ -60,13 +69,20 @@ describe MoviesController do
   	end
 
   	it 'should show selected ratings' do
-  		get :index, {rating: 'G', rating: 'PG'}
-  		response.should render_template('index')
+  		get :index, {:ratings => {'G' => 1, 'PG' => 1}}
+  		response.should redirect_to(movies_path(:ratings => {'G' => 1, 'PG' => 1}))
   	end
 
   	it 'should show ratings and be sorted' do
-  		get :index, {rating: 'PG', sort: 'release_date'}
+  		get :index, {:ratings => {'G' => 1}, sort: 'release_date'}
+  		response.should redirect_to(movies_path(sort: 'release_date', :ratings => {'G' => 1}))
   	end
+
+  	it 'should sort by title' do
+  		get :index, {sort: 'title', :ratings => {'PG' => 1}}
+  		response.should redirect_to(movies_path(sort: 'title', :ratings => {'PG' => 1}))
+  	end
+
   end
 
  	describe 'new controller action' do

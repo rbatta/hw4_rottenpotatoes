@@ -65,8 +65,11 @@ class MoviesController < ApplicationController
   end
 
   def similar
-    if Movie.find(params[:id]).director == "" || Movie.find(params[:id]).director == nil
-      flash[:notice] = "'#{Movie.find(params[:id]).title}' has no director info"
+    # for specs, movie.find params id was being read in 2+ times
+    # so put that into a variable so that .find was actually "seen" once
+    find = Movie.find(params[:id])
+    if find.director == "" || find.director == nil
+      flash[:notice] = "'#{find.title}' has no director info"
       redirect_to movies_path # escapes out of method
     else
       @movies = Movie.find_by_director(params[:id])
