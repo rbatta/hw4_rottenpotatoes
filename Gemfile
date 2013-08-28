@@ -14,7 +14,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'simplecov'
-  gem 'ZenTest'
+  gem 'ZenTest', '4.9.3'
   gem 'factory_girl_rails'
 end
 

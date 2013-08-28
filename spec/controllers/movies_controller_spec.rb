@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe MoviesController do
-	before { fake_movie = FactoryGirl.create(:movie) }
+	before { @fake_movie = FactoryGirl.create(:movie) }
 
   describe 'find movies with same director' do
 
@@ -23,7 +23,7 @@ describe MoviesController do
 	  		# regardless of it working or not
 	  		# route is :controller, :action, :id so needs some sort of id value
 	  		# therefore, the should_recv find by dir needs to return with id: 1
-	  		Movie.should_receive(:find_by_director).with('1')
+	  		Movie.should_receive(:find_by_director).with('1').and_return(@fake_movie)
 	  	  get :similar, {:id => "1"}  
 	  	end #end it
 

@@ -25,7 +25,7 @@ module NavigationHelpers
       movie_path movie
 
     when /^the Similar Movies page for "(.*)"$/
-      movie = Movie.find_by_title($1)
+      movie = Movie.find_by_title $1
       similar_path movie
 
 
