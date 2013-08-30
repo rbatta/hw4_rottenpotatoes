@@ -113,6 +113,23 @@ describe MoviesController do
 	 	end
  	end
 
+ 	# ACTUAL SPEC WAY TO CHECK UPDATE CONTROLLER ACTION
+ 	describe 'update action' do
+
+    it 'calls the update attributes method' do
+    	#http://stackoverflow.com/questions/9967113/rspec-testing-for-update-controller-not-working
+    	fake_rating = 'PG-15'
+    	Movie.stub(:find).and_return(@fake_movie)
+      @fake_movie.should_receive(:update_attributes!).with("rating" => fake_rating).and_return(:true)
+      put :update, :id => @fake_movie.id, movie: {rating: fake_rating}
+    end
+
+    it 'redirects to movie show page' do
+      put :update, :id => @fake_movie.id
+      response.should redirect_to(movie_path(@fake_movie))
+    end
+  end
+
  	describe 'destroy controller action' do
  		it 'should delete a movie' do
  			get :destroy, {id: '1'}
