@@ -1,21 +1,21 @@
---- 
-Cucumber Features: 
-  :original_result: 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+---
+Cucumber Features:
+  :original_result:
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb:
     - 1
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb:
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb:
     - 1
     - 
     - 1
     - 0
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb:
     - 1
     - 
     - 1
@@ -96,7 +96,7 @@ Cucumber Features:
     - 
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb:
     - 1
     - 1
     - 1
@@ -107,24 +107,24 @@ Cucumber Features:
     - 1
     - 
     - 
-  :created_at: 2013-08-18 23:38:10.843950 -04:00
-RSpec: 
-  :original_result: 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+  :created_at: 2013-08-18 20:38:10.843950000 -07:00
+RSpec:
+  :original_result:
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb:
     - 1
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb:
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb:
     - 1
     - 
     - 1
     - 0
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb:
     - 1
     - 
     - 1
@@ -206,7 +206,7 @@ RSpec:
     - 
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb:
     - 1
     - 1
     - 4
@@ -217,24 +217,24 @@ RSpec:
     - 0
     - 
     - 
-  :created_at: 2013-08-29 23:08:40.271990 -04:00
-"/home/ubuntu/.rvm/gems/ruby-1.9.2-p320/bin/rspec ": 
-  :original_result: 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+  :created_at: 2013-08-29 20:08:40.271990000 -07:00
+! '/home/ubuntu/.rvm/gems/ruby-1.9.2-p320/bin/rspec ':
+  :original_result:
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/application_controller.rb:
     - 1
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/application_helper.rb:
     - 1
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/helpers/movies_helper.rb:
     - 1
     - 
     - 1
     - 0
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/controllers/movies_controller.rb:
     - 1
     - 
     - 1
@@ -315,7 +315,7 @@ RSpec:
     - 
     - 
     - 
-    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb: 
+    /home/ubuntu/Documents/hw4_rottenpotatoes/app/models/movie.rb:
     - 1
     - 1
     - 5
@@ -326,4 +326,114 @@ RSpec:
     - 2
     - 
     - 
-  :created_at: 2013-08-29 22:28:03.119944 -04:00
+  :created_at: 2013-08-29 19:28:03.119944000 -07:00
+! '/Users/rbatta/.rbenv/versions/1.9.3-p484/bin/rspec ':
+  :original_result:
+    /Users/rbatta/Documents/OpenSource/hw4_rottenpotatoes/app/controllers/application_controller.rb:
+    - 1
+    - 1
+    - 
+    /Users/rbatta/Documents/OpenSource/hw4_rottenpotatoes/app/helpers/application_helper.rb:
+    - 1
+    - 
+    /Users/rbatta/Documents/OpenSource/hw4_rottenpotatoes/app/helpers/movies_helper.rb:
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /Users/rbatta/Documents/OpenSource/hw4_rottenpotatoes/app/controllers/movies_controller.rb:
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 4
+    - 4
+    - 
+    - 1
+    - 
+    - 1
+    - 
+    - 4
+    - 4
+    - 
+    - 4
+    - 6
+    - 
+    - 
+    - 4
+    - 2
+    - 2
+    - 2
+    - 
+    - 
+    - 2
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 3
+    - 3
+    - 3
+    - 3
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 4
+    - 4
+    - 1
+    - 1
+    - 
+    - 3
+    - 
+    - 
+    - 
+    - 
+    - 
+    /Users/rbatta/Documents/OpenSource/hw4_rottenpotatoes/app/models/movie.rb:
+    - 1
+    - 1
+    - 5
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 
+    - 
+  :created_at: 2014-04-09 14:48:55.284147000 -07:00

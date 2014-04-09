@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-
+ruby '1.9.3'
 gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
@@ -8,13 +8,13 @@ gem 'rails', '3.1.0'
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
   gem 'sqlite3'
-  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'debugger'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'
   gem 'simplecov'
-  gem 'ZenTest', '4.9.3'
+  gem 'ZenTest', '4.8.3'
   gem 'factory_girl_rails'
 end
 
@@ -30,7 +30,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'therubyracer' #, "~> 0.9.9"             
+  gem 'therubyracer', "~> 0.9.9"             
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
